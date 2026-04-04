@@ -17,20 +17,20 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: mb-backend-service
+                name: {{ .Release.Name | replace "mb-frontend" "mb-backend" }}-service
                 port:
                   number: 3000
           - path: /admin
             pathType: Prefix
             backend:
               service:
-                name: mb-admin-frontend-service
+                name: {{ .Release.Name | replace "mb-frontend" "mb-admin" }}-frontend-service
                 port:
                   number: 80
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: mb-frontend-service
+                name: {{ .Release.Name }}-service
                 port:
                   number: 80
