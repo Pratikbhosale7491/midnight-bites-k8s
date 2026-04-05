@@ -1,6 +1,6 @@
 replicaCount: 3
 image:
-  tag: "5dbbb642bc79710551dd98e48b97e2d054658ddd"
+  tag: "cf4f7cc9d2f1ed49b2c4ccc2fe7e51146928d761"
 resources:
   requests:
     cpu: 200m
