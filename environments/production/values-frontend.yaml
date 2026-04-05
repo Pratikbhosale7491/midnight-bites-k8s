@@ -1,6 +1,6 @@
 replicaCount: 3
 image:
-  tag: "latest"
+  tag: "5dbbb642bc79710551dd98e48b97e2d054658ddd"
 resources:
   requests:
     cpu: 200m
